@@ -1,12 +1,6 @@
 # USER TABLE TRX
 USER TABLE TRX
 
-## Requirements
-
-- docker
-- docker-compose
-- node js
-
 ## Getting Started
 
 These instructions will get you a copy of the project up and running on your local machine for development and testing purposes. See deployment for notes on how to deploy the project on a live system.
@@ -108,6 +102,7 @@ there are 3 main endpoints on this service
 1. List user's transactions
 
 * *GET*    http://localhost:port/api/user/trx/list
+
 > contentType: `application/json`
 > response
 
@@ -121,6 +116,7 @@ there are 3 main endpoints on this service
 2. List user's transactions using pivot function
 
 * *GET*    http://localhost:port/api/user/trx/pivot
+
 > contentType: `application/json`
 > response
 
@@ -133,5 +129,6 @@ there are 3 main endpoints on this service
 ```
 
 3. Dashboard | home
+> contentType: `text/html`
 
 * *GET*    http://localhost:port
