@@ -1,0 +1,27 @@
+version: '3'
+services:
+    db_sql:
+        build: ./db
+        container_name: db_sql
+        hostname: db_sql
+        command: --default-authentication-plugin=mysql_native_password
+        command: --sql_mode='NO_ENGINE_SUBSTITUTION'
+        restart: always
+        environment:
+            MYSQL_ROOT_PASSWORD: root
+            MYSQL_DATABASE: female_dayli
+            MYSQL_PASSWORD: root
+        networks: ["fd_user_trx"]
+        ports:
+            - "3306:3306"
+    api-fd_user_trx:
+        build: .
+        container_name: api-fd_user_trx
+        depends_on:
+            - db_sql
+        networks: ["fd_user_trx"]
+        ports:
+            - "8080:2021"
+networks:
+  fd_user_trx:
+    driver: bridge

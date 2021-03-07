@@ -1,10 +1,10 @@
 {
     "development": {
         "fd-db": {
-            "username": "mrbontor",
-            "password": "parsamosir",
+            "username": "root",
+            "password": "root",
             "database": "female_dayli",
-            "host": "192.168.1.2",
+            "host": "db_sql",
             "port": "3306",
             "dialect": "mysql",
             "timezone": "+7:00",
@@ -13,10 +13,10 @@
     },
     "production": {
         "fd-db": {
-            "username": "mrbontor",
-            "password": "parsamosir",
+            "username": "root",
+            "password": "root",
             "database": "female_dayli",
-            "host": "192.168.1.2",
+            "host": "db_sql",
             "port": "3306",
             "dialect": "mysql",
             "timezone": "+7:00",
