@@ -13,7 +13,7 @@ let config = {
     log: {
         path: 'var/log/',
         level: 'debug',
-        type: 'files',
+        type: 'both',
         errorSufix: '-error',
         filename: 'log-users-table'
     }
