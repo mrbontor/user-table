@@ -1,0 +1,28 @@
+{
+  "name": "user-table",
+  "version": "1.0.0",
+  "description": "user-table",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mrbontor/user-table.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/mrbontor/user-table/issues"
+  },
+  "homepage": "https://github.com/mrbontor/user-table#readme",
+  "dependencies": {
+    "express": "^4.17.1",
+    "ini": "^1.3.5",
+    "minimist": "^1.2.5",
+    "mysql2": "^2.2.5",
+    "sequelize": "^6.5.0",
+    "winston": "^3.3.3"
+  }
+}
